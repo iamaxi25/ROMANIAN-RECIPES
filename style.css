@@ -1,36 +1,58 @@
+@font-face {
+    font-family: 'myFirstFont';
+    src: url(fonts/Memphis-River/Memphis\ River.otf);
+}
 body
-{
+ {  /* We set the background svg image  */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask3422%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='url(%23SvgjsRadialGradient3423)'%3e%3c/rect%3e%3cpath d='M231.555%2c520.572C328.255%2c516.175%2c403.525%2c442.396%2c446.552%2c355.684C484.756%2c278.691%2c476.039%2c189.647%2c432.545%2c115.514C389.631%2c42.37%2c316.298%2c-7.541%2c231.555%2c-10.767C140.755%2c-14.224%2c51.676%2c22.923%2c2.187%2c99.13C-52.039%2c182.631%2c-67.798%2c289.459%2c-20.204%2c376.909C29.301%2c467.869%2c128.103%2c525.276%2c231.555%2c520.572' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M164.34%2c335.69C236.475%2c339.722%2c316.886%2c335.612%2c357.513%2c275.869C402.172%2c210.197%2c395.417%2c122.629%2c356.183%2c53.579C316.46%2c-16.331%2c244.735%2c-62.71%2c164.34%2c-64.105C81.495%2c-65.542%2c-2.532%2c-27.491%2c-39.388%2c46.717C-73.424%2c115.246%2c-38.823%2c193.644%2c5.266%2c256.181C41.875%2c308.108%2c100.904%2c332.145%2c164.34%2c335.69' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-136.84 -7.16 a129.68 129.68 0 1 0 259.36 0 a129.68 129.68 0 1 0 -259.36 0z' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1722.055%2c104.986C1750.165%2c103.882%2c1766.873%2c76.372%2c1779.685%2c51.327C1791.062%2c29.087%2c1797.462%2c3.362%2c1785.162%2c-18.381C1772.702%2c-40.406%2c1747.351%2c-51.202%2c1722.055%2c-50.543C1697.909%2c-49.914%2c1677.109%2c-35.773%2c1664.399%2c-15.233C1650.88%2c6.614%2c1644.901%2c33.02%2c1656.01%2c56.185C1668.697%2c82.638%2c1692.74%2c106.138%2c1722.055%2c104.986' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1926.372%2c441.636C2007.696%2c443.982%2c2090.027%2c410.8%2c2130.177%2c340.039C2169.895%2c270.039%2c2153.49%2c184.146%2c2111.393%2c115.55C2071.396%2c50.375%2c2002.611%2c13.87%2c1926.372%2c7.941C1835.986%2c0.912%2c1728.922%2c3.691%2c1683.751%2c82.295C1638.657%2c160.765%2c1691.316%2c253.834%2c1741.96%2c328.842C1785.177%2c392.849%2c1849.173%2c439.409%2c1926.372%2c441.636' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1761.012%2c150.452C1796.611%2c150.464%2c1832.555%2c139.375%2c1851.826%2c109.443C1872.68%2c77.053%2c1876.734%2c34.672%2c1856.764%2c1.729C1837.392%2c-30.227%2c1798.379%2c-40.734%2c1761.012%2c-40.363C1724.42%2c-39.999%2c1687.459%2c-27.7%2c1668.499%2c3.599C1648.915%2c35.929%2c1650.153%2c77.402%2c1670.301%2c109.384C1689.263%2c139.484%2c1725.437%2c150.44%2c1761.012%2c150.452' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M118.329%2c1132.371C174.455%2c1133.76%2c232.624%2c1113.135%2c259.836%2c1064.028C286.416%2c1016.061%2c267.266%2c959.656%2c240.587%2c911.744C212.931%2c862.078%2c175.113%2c812.581%2c118.329%2c809.902C57.859%2c807.049%2c2.445%2c845.579%2c-25.692%2c899.179C-52.056%2c949.402%2c-41.355%2c1009.054%2c-11.549%2c1057.314C16.612%2c1102.911%2c64.753%2c1131.046%2c118.329%2c1132.371' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-115.05 835.05 a86.1 86.1 0 1 0 172.2 0 a86.1 86.1 0 1 0 -172.2 0z' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M151.118%2c1203.416C217.933%2c1203.69%2c281.345%2c1167.369%2c311.952%2c1107.976C340.444%2c1052.688%2c318.884%2c990.052%2c289.251%2c935.367C257.633%2c877.019%2c217.426%2c813.901%2c151.118%2c811.171C81.603%2c808.309%2c24.669%2c861.814%2c-8.228%2c923.119C-39.235%2c980.901%2c-39.861%2c1049.66%2c-7.452%2c1106.668C25.345%2c1164.36%2c84.756%2c1203.144%2c151.118%2c1203.416' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1840.396%2c1172.575C1900.314%2c1173.555%2c1952.561%2c1134.337%2c1981.477%2c1081.849C2009.364%2c1031.227%2c2008.727%2c969.945%2c1979.489%2c920.091C1950.596%2c870.825%2c1897.497%2c840.088%2c1840.396%2c841.29C1785.232%2c842.451%2c1738.222%2c877.697%2c1711.091%2c925.742C1684.446%2c972.927%2c1681.94%2c1029.362%2c1707.085%2c1077.363C1734.244%2c1129.207%2c1781.877%2c1171.618%2c1840.396%2c1172.575' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1780.494%2c1075.976C1825.049%2c1072.992%2c1856.431%2c1035.812%2c1876.472%2c995.907C1894.229%2c960.551%2c1894.982%2c920.055%2c1876.323%2c885.167C1856.454%2c848.017%2c1822.619%2c817.058%2c1780.494%2c816.451C1737.495%2c815.832%2c1702.541%2c845.862%2c1679.76%2c882.335C1655.206%2c921.647%2c1637.935%2c969.332%2c1659.325%2c1010.451C1682.037%2c1054.111%2c1731.39%2c1079.265%2c1780.494%2c1075.976' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1467.79 956.2 a328.41 328.41 0 1 0 656.82 0 a328.41 328.41 0 1 0 -656.82 0z' fill='rgba(166%2c 51%2c 123%2c 0.63)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask3422'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='0%25' cy='50%25' r='1994.49' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient3423'%3e%3cstop stop-color='rgba(234%2c 138%2c 129%2c 1)' offset='0.45'%3e%3c/stop%3e%3cstop stop-color='rgba(117%2c 25%2c 25%2c 1)' offset='0.46'%3e%3c/stop%3e%3cstop stop-color='rgba(244%2c 174%2c 174%2c 1)' offset='0.47'%3e%3c/stop%3e%3c/radialGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
     -webkit-background-size: cover;
-    -moz-background-size: cover;
+    -moz-background-size: cover; 
     -o-background-size: cover;
     background-size: cover;
- 
 }
+
+
+/* We center the main content div in the page  */
 .content{
-    max-width:699px;
+    max-width:800px;
     margin:auto;
 }
-.title{
-    font-family: 'Calibri', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:55px;
-    color:aliceblue;
-    text-align: center;
-    text-shadow: 1px 5px black;
+
+/* Title styling  */
+
+.title-box{
+    background-color:rgba(58, 37, 107, 0.5);
+    border-radius: 25px;
+    max-width: 700px;
+    margin:auto;
 }
+
+.title{
+    font-family: myFirstFont, Arial, Helvetica, sans-serif;
+    font-size:100px;
+    color:rgb(255, 191, 223);
+    text-align: center;
+    text-shadow: 1px 5px rgb(0, 0, 0);
+    
+}
+
+/* Put the images on center  */
 .recipes{
     text-align: center;
    
 }
+/* Remove the dots of the list items */
 ul#horizontal-list{
     list-style-type:none;
 }
 
+/* Create space between images  */
 ul#horizontal-list li{
     margin:50px 0;
     
 }
 
+/* Stylings and transitions for images  */
 .images{
     max-width:350px;
     height:auto;
